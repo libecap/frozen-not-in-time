@@ -1,0 +1,54 @@
+html {
+  background-color: #000;
+}
+
+.stripes {
+  position: relative;
+  border-top: #b3fbff;
+  border-bottom: #b3fbff;
+  border-width: medium;
+
+  background-image: repeating-linear-gradient(-45deg, #c9fcff, #d4fdff 1%);
+
+}
+
+.text {
+  max-width: 19em;
+  color: #c09;
+  font-family: "Fredoka One", cursive;
+  /*animation: blur 1s 3s linear forwards;*/
+}
+
+.text h1 {
+  color: #990073;
+  transform: rotate(-15deg);
+}
+
+.text p {
+  color: #c09;
+  transform: rotate(-10deg);
+}
+
+.btn-ghost {
+  color: #c09;
+  border-color: #c09;
+}
+
+.btn-ghost:hover {
+  color: #990073;
+  border-color: #990073;
+  background-color: rgb(153, 0, 115, .1)
+}
+
+
+@keyframes blur {
+
+  0% {
+    filter: blur(0px);
+  }
+
+  100% {
+    filter: blur(7px);
+  }
+
+}
