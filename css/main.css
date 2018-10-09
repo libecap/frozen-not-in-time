@@ -40,6 +40,45 @@ html {
   background-color: rgb(153, 0, 115, .1)
 }
 
+.cherry {
+  bottom: calc(70%);
+  left: calc(72%);
+  position: absolute;
+  width: 30px;
+  animation: plop 1s 1s linear forwards;
+}
+
+.vanilla {
+  bottom: calc(52%);
+  left: calc(70%);
+  position: absolute;
+  width: 70px;
+  animation: plop 1s 1s linear forwards;
+}
+
+.chocolate {
+  bottom: calc(40%);
+  left: calc(71%);
+  position: absolute;
+  width: 70px;
+  animation: plop 1s 1s linear forwards;
+}
+
+.mint-chip {
+  bottom: calc(25%);
+  left: calc(70%);
+  position: absolute;
+  width: 70px;
+  animation: plop 1s 1s linear forwards;
+}
+
+.cone {
+  bottom: calc(5%);
+  left: calc(70%);
+  position: absolute;
+  width: 70px;
+  animation: plop 1s 1s linear forwards;
+}
 
 @keyframes blur {
 
@@ -49,6 +88,18 @@ html {
 
   100% {
     filter: blur(7px);
+  }
+
+}
+
+@keyframes plop {
+
+  0% {
+    transform: translateY(-5em);
+  }
+
+  100% {
+    transform: translate(y);
   }
 
 }
