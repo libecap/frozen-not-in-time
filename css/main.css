@@ -42,7 +42,7 @@ html {
 .btn-ghost:hover {
   color: #990073;
   border-color: #990073;
-  background-color: rgb(153, 0, 115, .05);
+  background-color: rgb(153, 0, 115, .5);
 }
 
 .ice-cream {
