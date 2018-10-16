@@ -2,6 +2,10 @@ html {
   background-color: #000;
 }
 
+.red {
+  background: red;
+}
+
 .stripes {
   border-top: #b3fbff;
   border-bottom: #b3fbff;
@@ -43,41 +47,44 @@ html {
 }
 
 .ice-cream {
-  position: relative;
+  min-height: 480px;
 }
 
 .cherry {
-  left: 40px;
-  position: absolute;
-  width: 50px;
   animation: cherry-plop 1s 1.25s linear forwards;
 }
 
 .piece {
   bottom: 100%;
+  width: 150px;
+  height: 150px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.cherry-piece {
+  bottom: 100%;
+
+  left: 50%;
+
+  transform: translateX(-50%);
 }
 
 .vanilla {
-  position: absolute;
-  width: 120px;
   animation: vanilla-plop 1s 1s linear forwards;
 }
 
 .chocolate {
-  position: absolute;
-  width: 120px;
   animation: chocolate-plop 1s .75s linear forwards;
 }
 
 .mint-chip {
-  position: absolute;
-  width: 120px;
   animation: mint-plop 1s .5s linear forwards;
 }
 
 .cone {
-  position: absolute;
-  width: 120px;
   animation: cone-plop .25s linear forwards;
 }
 
@@ -104,7 +111,7 @@ html {
   }
 
   100% {
-    bottom: -100px;
+    bottom: 400px;
   }
 
 }
@@ -116,7 +123,7 @@ html {
   }
 
   100% {
-    bottom: -200px;
+    bottom: 260px;
   }
 
 }
@@ -128,7 +135,7 @@ html {
   }
 
   100% {
-    bottom: -260px;
+    bottom: 220px;
   }
 
 }
@@ -140,7 +147,7 @@ html {
   }
 
   100% {
-    bottom: -340px;
+    bottom: 130px;
   }
 
 }
@@ -152,7 +159,7 @@ html {
   }
 
   100% {
-    bottom: -450px;
+    bottom: 0;
   }
 
 }
