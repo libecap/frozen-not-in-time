@@ -28,7 +28,6 @@ html {
     transform: rotate(-11deg);
   }
 
-
   100% {
     opacity: 1;
     filter: blur(0);
@@ -48,6 +47,7 @@ html {
 }
 
 @keyframes intro-blur {
+
   0% {
     filter: blur(0);
     opacity: 0;
@@ -59,9 +59,8 @@ html {
     opacity: 1;
     transform: rotate(-5deg);
   }
+
 }
-
-
 
 .btn-ghost {
   color: #c09;
@@ -77,10 +76,12 @@ html {
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     filter: blur(0);
     opacity: 1;
   }
+
 }
 
 .btn-ghost:hover {
