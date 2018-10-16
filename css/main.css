@@ -3,30 +3,31 @@ html {
 }
 
 .stripes {
-  position: relative;
   border-top: #b3fbff;
   border-bottom: #b3fbff;
   border-width: medium;
 
-  background-image: repeating-linear-gradient(-45deg, #c9fcff, #d4fdff 1%);
-
+  background-image: repeating-linear-gradient(-30deg, #c9fcff, #d4fdff 2%);
 }
 
 .text {
-  max-width: 19em;
   color: #c09;
-  font-family: "Fredoka One", cursive;
-  /*animation: blur 1s 3s linear forwards;*/
+  font-family: "Fredoka One", sans-serif;
+  transform-origin: left center;
+  animation: blur 3s linear forwards;
 }
 
 .text h1 {
   color: #990073;
-  transform: rotate(-15deg);
+  transform: rotate(-10deg);
+  text-shadow: 2px 2px rgba(0, 0, 0, .5);
 }
 
 .text p {
   color: #c09;
-  transform: rotate(-10deg);
+  transform: rotate(-5deg);
+  text-shadow: 2px 2px rgba(0, 0, 0, .5);
+  max-width: 19em;
 }
 
 .btn-ghost {
@@ -37,69 +38,121 @@ html {
 .btn-ghost:hover {
   color: #990073;
   border-color: #990073;
-  background-color: rgb(153, 0, 115, .1)
+  background-color: rgb(153, 0, 115);
+  opacity: 0;
+}
+
+.ice-cream {
+  position: relative;
 }
 
 .cherry {
-  bottom: calc(70%);
-  left: calc(72%);
+  left: 40px;
   position: absolute;
-  width: 30px;
-  animation: plop 1s 1s linear forwards;
+  width: 50px;
+  animation: cherry-plop 1s 1.25s linear forwards;
+}
+
+.piece {
+  bottom: 100%;
 }
 
 .vanilla {
-  bottom: calc(52%);
-  left: calc(70%);
   position: absolute;
-  width: 70px;
-  animation: plop 1s 1s linear forwards;
+  width: 120px;
+  animation: vanilla-plop 1s 1s linear forwards;
 }
 
 .chocolate {
-  bottom: calc(40%);
-  left: calc(71%);
   position: absolute;
-  width: 70px;
-  animation: plop 1s 1s linear forwards;
+  width: 120px;
+  animation: chocolate-plop 1s .75s linear forwards;
 }
 
 .mint-chip {
-  bottom: calc(25%);
-  left: calc(70%);
   position: absolute;
-  width: 70px;
-  animation: plop 1s 1s linear forwards;
+  width: 120px;
+  animation: mint-plop 1s .5s linear forwards;
 }
 
 .cone {
-  bottom: calc(5%);
-  left: calc(70%);
   position: absolute;
-  width: 70px;
-  animation: plop 1s 1s linear forwards;
+  width: 120px;
+  animation: cone-plop .25s linear forwards;
 }
 
 @keyframes blur {
 
   0% {
-    filter: blur(0px);
+    filter: opacity(0%);
+  }
+
+  50% {
+    filter: opacity(0%);
   }
 
   100% {
-    filter: blur(7px);
+    filter: opacity(100%);
   }
 
 }
 
-@keyframes plop {
+@keyframes cherry-plop {
 
   0% {
-    transform: translateY(-5em);
+    bottom: 100%;
   }
 
   100% {
-    transform: translate(y);
+    bottom: -100px;
+  }
+
+}
+
+@keyframes vanilla-plop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: -200px;
+  }
+
+}
+
+@keyframes chocolate-plop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: -260px;
+  }
+
+}
+
+@keyframes mint-plop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: -340px;
+  }
+
+}
+
+@keyframes cone-plop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: -450px;
   }
 
 }
